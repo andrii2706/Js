@@ -34,3 +34,38 @@
 // const book = {id: 1, bookName: 'Clear Code', numberOfPages: 300, ganer: 'programming'}
 // console.log(book);
 
+// 3. Створити об'єкт book з наступними полями  - назва, кількість сторінок, жанр, автори
+// const book = {id: 1, bookName: 'Clear Code', numberOfPages: 300, ganer: 'programming', author: 'R.Martin'}
+// console.log(book);
+// 4. Створити маис об'єктів book з наступними полями  - назва, кількість сторінок, жанр, автори. Вивести кожну книгу як окремий об'єкт
+// const book = [
+//     {id: 1, bookName: 'Clear Code', numberOfPages: 300, ganer: 'programming', author: 'R.Martin'},
+//     {id: 2, bookName: 'Netflix', numberOfPages: 400, ganer: 'business', author: 'Erin Mair'},
+//     {id: 3, bookName: 'Philosophy Toyota', numberOfPages: 450, ganer: 'business', author: 'D.Laiker'},
+//     {id: 4, bookName: 'Agile', numberOfPages: 300, ganer: 'programming', author: 'R.Martin'},
+// ]
+// console.log(book);
+
+// 5. Напишіть код, який вираховує площу прямокутника висотою 23см. (змінна height) та шириною 10см (змінна width).
+// Значення площі зберігати в змінній s.
+// let width =  10;
+// let heigth = 23;
+// let s  = width*heigth;
+// console.log(s + 'см');
+
+// 6. Напиши код, який знаходить об'єм циліндра заввишки 10м (змінна heightC) та діаметром основи 4м (dC),
+// результат помістіть у змінну v.
+
+// let heigthV = 10;
+// let dc = 4;
+// let v = heigthV *dc;
+// console.log(v + 'см^3');
+
+// 7. У прямокутного трикутника дві сторони n (зі значенням 3) та m (зі значенням 4).
+// Знайдіть гіпотенузу k за теоремою Піфагора (потрібно використовувати функцію Math.pow (число, ступінь) або оператор зведення в ступінь **).
+
+// let n1 = 3;
+// let n2 = 3;
+// let m = 4;
+// let k = n1**2 + n2**2 + m**2 ;
+// console.log(k);
