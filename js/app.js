@@ -1,175 +1,82 @@
-// alert('22')
+// --створити масив з:
+//     - з 5 числових значень
+// - з 5 стічкових значень
+// - з 5 значень стрічкового, числового та булевого типу
+// - та вивести його в консоль
 
-// - Створити змінні. Присвоїти кожному з них значення: 'hello','owu','com', 'ua', 1, 10, -999, 123, 3.14, 2.7, 16, true, false.
-//     Вивести кожну змінну за допомогою: console.log , alert, document.write
+// const str = ['asd', 'qwe', 'dfg', 'vbn', 'zxc']
+// console.log(str);
+// const numb = [1, 2, 3, 4, 5];
+// console.log(numb);
+// const bool = [true, false, true, false, true]
+// console.log(bool);
 
-// let hello = 'hello';
-// let owu = 'owu';
-// let com = 'com';
-// let ua = 'ua';
-// let number1 = 1;
-// let number10 = 10;
-// let number999 = -999;
-// let number123 = 123;
-// let numberPI = 3.14;
-// let exponent = 2.7;
-// let number = 16;
-// let firstboolean = true;
-// let secondboolean= false;
-// console.log(hello);
-// console.log(owu);
-// console.log(com);
-// console.log(ua);
-// console.log(number1);
-// console.log(number10);
-// console.log(number999);
-// console.log(number123);
-// console.log(numberPI);
-// console.log(exponent);
-// console.log(number);
-// console.log(firstboolean);
-// console.log(secondboolean);
-// alert(hello);
-// alert(owu);
-// alert(com);
-// alert(ua);
-// alert(number1);
-// alert(number10);
-// alert(number999);
-// alert(number123);
-// alert(numberPI);
-// alert(exponent);
-// alert(number);
-// alert(firstboolean);
-// alert(secondboolean);
-// document.write(`<div>${hello}</div>`);
-// document.write(`<div>${owu}</div>`);
-// document.write(`<div>${com}</div>`);
-// document.write(`<div>${ua}</div>`);
-// document.write(`<div>${number}</div>`);
-// document.write(`<div>${number1}</div>`);
-// document.write(`<div>${number10}</div>`);
-// document.write(`<div>${number999}</div>`);
-// document.write(`<div>${number123}</div>`);
-// document.write(`<div>${numberPI}</div>`);
-// document.write(`<div>${secondboolean}</div>`);
-// document.write(`<div>${firstboolean}</div>`);
-// document.write(`<div>${exponent}</div>`);
-
-//- Переприсвоїти кожній змінній з завдання значення на довільне.
-// hello = 'Owu';
-// owu = 'Hello';
-// com = 'ua';
-// ua = ';';
-// number = 'qwert';
-// number123 = 'asdf';
-// numberPI = 'sdf';
-// number999 = 'vbn';
-// number1 = 'qwe';
-// number10 = 'asd';
-// exponent = '5468';
-// firstboolean = false;
-// secondboolean = true;
-
-// console.log(hello);
-// console.log(owu);
-// console.log(com);
-// console.log(ua);
-// console.log(number1);
-// console.log(number10);
-// console.log(number999);
-// console.log(number123);
-// console.log(numberPI);
-// console.log(exponent);
-// console.log(number);
-// console.log(firstboolean);
-// console.log(secondboolean);
-// alert(hello);
-// alert(owu);
-// alert(com);
-// alert(ua);
-// alert(number1);
-// alert(number10);
-// alert(number999);
-// alert(number123);
-// alert(numberPI);
-// alert(exponent);
-// alert(number);
-// alert(firstboolean);
-// alert(secondboolean);
-// document.write(`<div>${hello}</div>`);
-// document.write(`<div>${owu}</div>`);
-// document.write(`<div>${com}</div>`);
-// document.write(`<div>${ua}</div>`);
-// document.write(`<div>${number}</div>`);
-// document.write(`<div>${number1}</div>`);
-// document.write(`<div>${number10}</div>`);
-// document.write(`<div>${number999}</div>`);
-// document.write(`<div>${number123}</div>`);
-// document.write(`<div>${numberPI}</div>`);
-// document.write(`<div>${secondboolean}</div>`);
-// document.write(`<div>${firstboolean}</div>`);
-// document.write(`<div>${exponent}</div>`);
-
-//- Створити 3 змінних firstName, middleName, lastName, наповнити їх своїм ПІБ. З'єднати їх в одну змінну person. (Не об'єкт)
-// let firstName = 'Andrii';
-// let LastName = 'Paslavskyi'
-// let MiddleName = 'Volodumurovych'
+//-- Створити пустий масив. Наповнити його будь-якими значеннями звертаючись до конкретного індексу. Вивести в консоль
+// let emptyArr = []
 //
-// const person = firstName+ ' ' + LastName+ ' ' + MiddleName;
-// console.log(person);
+// emptyArr[0] = 'qwe';
+// emptyArr[1] = 'asd';
+// emptyArr[2] = 'zxc';
+// emptyArr[3] = 5;
+// emptyArr[4] = true;
+// emptyArr[5] = null;
+// emptyArr[6] = 4545;
+// emptyArr[7] = 'Hello';
+//
+// console.log(emptyArr);
+//
 
-//- За допомогою 3х різних prompt() отримати 3 слова які являються вашими Імям, По-Батькові та роками.
-//     Вивести "Вітаю *Імя* *По батькові*. Тобі *вік* років".
-// let firstName = prompt('Your name');
-// let secondName = prompt('Your SecondName');
-// let yourAge = +prompt('How old are you?')
-// console.log(`Your name - ${firstName}`);
-// console.log(`Your SecondName - ${secondName}`);
-// console.log(`Your Age - ${yourAge}`);
-
-// - За допомогою оператора typeof визначити типи наступних змінних та вивести їх в консоль.
-//     let a = 100; let b = '100'; let c = true;
-// let a  = 100 ;
-// console.log(typeof a);
-// let  b  = '100';
-// console.log(typeof  b);
-// let  c = true;
-// console.log(typeof c);
-
-//- Визначити відповідний оператор в виразах що б вийшов відповідний результат.
-// В однакових виразах не використовувати однакові оператори!!!
-// const xxx = 5 < 6;
-// const fff = 5 > 6;
-// const lll = 5 === 6;
-// const kkk = 5 == 6;
-// const mmm = 10=== 10;
-// const nnn = 10 == 10;
-// const yyy = 10 > 10;
-// const ttt = 10 < 10;
-// const rrr = 10 !== 10;
-// const ddd = 123 > '123';
-// const www = 123 == '123';
-// console.log(www);
-// console.log(ddd);
-// console.log(xxx);
-// console.log(fff);
-// console.log(lll);
-// console.log(kkk);
-// console.log(mmm);
-// console.log(nnn);
-// console.log(yyy);
-// console.log(ttt);
-// console.log(rrr);
+//Другий метод
+// const infoForEmptyArr = 'Hello'
+// const infoForEmptyArr2 = 'asd'
+// const infoForEmptyArr3 = 'qwe'
+// const infoForEmptyArr4 = 'zxc'
+// const infoForEmptyArr5 = 'vbn'
+// const infoForEmptyArr6 = 'mvbn'
+//
+// emptyArr.push(infoForEmptyArr,infoForEmptyArr2,infoForEmptyArr3,infoForEmptyArr4,infoForEmptyArr5,infoForEmptyArr6 )
 
 
-// - Подумайте Какие значения выведет в окно браузера следующий фрагмент кода?  и почему?
-//     let str = "20";
-// let a = 5;
-// document.write(str + a + "<br/>");
-// в фукція document.write(str + a + "<br/>"); поверне нам  205  тому, що чило  розглядається як стрінгове значення
-//document.write(str - a + "<br/>"); поверне нам 15 тому, що число розглядається як стрінгове значення
+// - За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом всередині
+// for (i=0; i< 10; i++){
+//     document.write(`<div>1</div>`)
+// }
 
-// document.write(str * "2" + "<br/>");поверне нам 40 тому, що число розглядається як стрінгове значення
+//- За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом і індексом всередині
+// for (i=1; i<11; i++){
+//     document.write(`<div>${i} --- Ідентифікатор</div>`);
+// }
 
-// document.write(str / 2 + "<br/>");поверне нам 10 тому,що число розглядається як стрінгове значення
+//- За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом всередині.
+// let i = 0;
+// while (i < 20) {
+// document.write(`<div>20 блоків</div>`);
+//     i++;
+// }
+
+// - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом і індексом всередині.
+// let i = 1;
+// while (i < 21) {
+// document.write(`<div>${i} --- блок</div>`);
+//     i++;
+// }
+
+// - Створити масив з 10 числових елементів. Вивести в консоль всі його елементи в циклі.
+
+// let numb = [1, 4, 5, 6, 8, 6, 7, 8, 45, 42];
+// for(i = 0; numb.length; i++)
+//     console.log(numb[i]);
+
+
+// - Створити масив з 10 строкрових елементів. Вивести в консоль всі його елементи в циклі.
+// let an = ['klsdmfmkl', 'lkmdslmsd;f','lsdf;fl;sdf','dslkmf;dsfm;sdf','sdasddfasdf','sd;fms;dfm','dfsdklsd','sjndfjnsdfkl','ldknsdld','ds dd ns,df n']
+// for(i = 0; an.length; i++)
+// console.log(an[i]);
+
+
+// - Створити масив з 10 елементів будь-якого типу. Вивести в консоль всі його елементи в циклі.
+// let mas = [ true, false, 1, 2,3,4,'Andrii','Oleg','John' ,'Ihor' ,];
+// for(i = 0; mas.length; i++);
+// console.log(mas[i]);
+
+
