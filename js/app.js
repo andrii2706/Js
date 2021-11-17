@@ -42,16 +42,50 @@
 //     якщо в змінну записали стрінгу вивести 2, якщо булеве значення - 3, якщо об'єкт або масив - 3.
 // якщо в змінну записали щось інше, спрацьовує else
 
-let something = typeof 5
-if (something === typeof Number){
-    console.log(1);
-}else if (something === typeof Boolean ){
-    console.log(2);
-}else if (something === typeof String ){
-    console.log(3);
-}else if (something === typeof Array || something  ===typeof  Object ){
-    console.log(4);
-}else if (something ===typeof  undefined || something ===typeof  null){
-    console.log('Good bye');
-}
+// let something = typeof 5
+// if (something === typeof Number){
+//     console.log(1);
+// }else if (something === typeof Boolean ){
+//     console.log(2);
+// }else if (something === typeof String ){
+//     console.log(3);
+// }else if (something === typeof Array || something  ===typeof  Object ){
+//     console.log(4);
+// }else if (something ===typeof  undefined || something ===typeof  null){
+//     console.log('Good bye');
+// }
+
+// - Задача-гра "чи ми йдемо сьогодні в OKTEN на навчання?".
+//     Змінна, яка характеризує температуру. Якщо температура від +10 до +22 вивести повідомлення що ми йдемо ВЧИТИСЯ .
+//     Якщо інша темпаретура, тоді виводимо повідомлення що сидимо вдома і вчимося ОНЛАЙН
+
+// let goToOkten = prompt('Чи ідемо ми сьогодні вчитись в Okten');
+// if (goToOkten >= +10 && goToOkten <= +22){
+//     console.log('Ми Ідемо вчитись');
+// }else {
+//     console.log('Ми вчимось дома');
+// }
+// - За допомогою switch case - реалізувати гру - вікторину, де ми вводимо число від 1 до 5. І взалежності від введеного
+//     числа нам дається приз. (Авто, Мото, Телефон, і т.д ) і якщо число не підходить тоді  вивести Повідомлення - що число не вірне ... .
+
+// let numberOfGame = +prompt('Ваше число');
+// switch (numberOfGame) {
+//     case(1):
+//         console.log('Ви грали Автомобіль');
+//         break
+//     case(2):
+//         console.log('Ви виграли Мотоцикл');
+//         break
+//     case(3):
+//         console.log('Ви виграли Телефон');
+//         break
+//     case(4):
+//         console.log('Ви виграли Квартиру');
+//         break
+//     case(5):
+//         console.log('Ви виграли Курс Від Октену(Шутка!!!)');
+//         break
+//     default: console.log('Введіть інше число');
+// }
+
 
