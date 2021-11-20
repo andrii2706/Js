@@ -1,158 +1,120 @@
-// --створити масив з:
-//     - з 5 числових значень
-// - з 5 стічкових значень
-// - з 5 значень стрічкового, числового та булевого типу
-// - та вивести його в консоль
-
-// const str = ['asd', 'qwe', 'dfg', 'vbn', 'zxc']
-// console.log(str);
-// const numb = [1, 2, 3, 4, 5];
-// console.log(numb);
-// const bool = [true, false, true, false, true]
-// console.log(bool);
-
-//-- Створити пустий масив. Наповнити його будь-якими значеннями звертаючись до конкретного індексу. Вивести в консоль
-// let emptyArr = []
+// - створити функцію яка обчислює та повертає площу прямокутника зі сторонами а і б
+// function s (a, b){
+//     let plocha = a*b;
+//     return plocha
 //
-// emptyArr[0] = 'qwe';
-// emptyArr[1] = 'asd';
-// emptyArr[2] = 'zxc';
-// emptyArr[3] = 5;
-// emptyArr[4] = true;
-// emptyArr[5] = null;
-// emptyArr[6] = 4545;
-// emptyArr[7] = 'Hello';
-//
-// console.log(emptyArr);
-//
-
-//Другий метод
-// const infoForEmptyArr = 'Hello'
-// const infoForEmptyArr2 = 'asd'
-// const infoForEmptyArr3 = 'qwe'
-// const infoForEmptyArr4 = 'zxc'
-// const infoForEmptyArr5 = 'vbn'
-// const infoForEmptyArr6 = 'mvbn'
-//
-// emptyArr.push(infoForEmptyArr,infoForEmptyArr2,infoForEmptyArr3,infoForEmptyArr4,infoForEmptyArr5,infoForEmptyArr6 )
-
-
-// - За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом всередині
-// for (i=0; i< 10; i++){
-//     document.write(`<div>1</div>`)
 // }
+// console.log(s(5,4));
 
-//- За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом і індексом всередині
-// for (i=1; i<11; i++){
-//     document.write(`<div>${i} --- Ідентифікатор</div>`);
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// - створити функцію яка обчислює та повертає площу кола з радіусом r
+// function circle ( r){
+//     const pi = 3.14;
+//     let s = 2*pi + Math.pow(r,2);
+//     return s
 // }
+// console.log(circle(10));
 
-//- За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом всередині.
-// let i = 0;
-// while (i < 20) {
-// document.write(`<div>20 блоків</div>`);
-//     i++;
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// - створити функцію яка обчислює та повертає площу циліндру висотою h, та радіутом r
+
+// function cylinder(r, h) {
+//     const pi = 3.14;
+//     let s = 2*pi*r*h
+//     return s
 // }
-
-// - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом і індексом всередині.
-// let i = 1;
-// while (i < 21) {
-// document.write(`<div>${i} --- блок</div>`);
-//     i++;
-// }
-
-// - Створити масив з 10 числових елементів. Вивести в консоль всі його елементи в циклі.
-
-// let numb = [1, 4, 5, 6, 8, 6, 7, 8, 45, 42];
-// for(i = 0;i < numb.length; i++)
-//     console.log(numb[i]);
+// console.log(cylinder(4, 10));
 
 
-// - Створити масив з 10 строкрових елементів. Вивести в консоль всі його елементи в циклі.
-// let an = ['klsdmfmkl', 'lkmdslmsd;f','lsdf;fl;sdf','dslkmf;dsfm;sdf','sdasddfasdf','sd;fms;dfm','dfsdklsd','sjndfjnsdfkl','ldknsdld','ds dd ns,df n']
-// for(i = 0; i < an.length; i++)
-// console.log(an[i]);
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// - створити функцію яка приймає масив та виводить кожен його елемент
 
-
-// - Створити масив з 10 елементів будь-якого типу. Вивести в консоль всі його елементи в циклі.
-// let mas = [ true, false, 1, 2,3,4,'Andrii','Oleg','John' ,'Ihor' ,];
-// for(i = 0; i < mas.length; i++);
-// console.log(mas[i]);
-
-// - Створити масив з 10 елементів числового, стірчкового і булевого типу. За допомогою if та typeof вивести тільки булеві елементи
-// - Створити масив з 10 елементів числового, стірчкового і булевого типу. За допомогою if та typeof вивести тільки числові елементи
-// - Створити масив з 10 елементів числового, стрічкового і булевого типу. За допомогою if та typeof вивести тільки рядкові елементи
-
-
-// let mas = [ true, false, 1, 2,3,4,'Andrii','Oleg','John' ,'Ihor' ,];
-//
-// for(let itemOfMas of mas){
-//     if (typeof itemOfMas === 'boolean'){
-//         console.log(itemOfMas);
+// let someArr = [4, 'asd', 'qwe', 'vbn', 45, 85, 25]
+// Варіант з  For Of
+// function arr(tArr){
+//     for (let item of tArr){
+//         console.log(item);
 //     }
 // }
-// for (let itemsOfMas of mas){
-//     if (typeof itemsOfMas === 'number'){
-//         console.log(itemsOfMas);
+// arr(someArr);
+
+// Другий Варіант розв'язку цієї задачі
+// function arr(tArr){
+//     for (i=0; i <tArr.length; i++){
+//         console.log(tArr[i]);
 //     }
 // }
-// for (let itemsOfMas of mas){
-//     if (typeof itemsOfMas === 'string'){
-//         console.log(itemsOfMas);
+// arr(someArr);
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+// - створити функцію яка створює параграф з текстом. Текст задати через аргумент
+
+// function paragraph(text) {
+//     let modelOfText = document.write(`<div><p>${text}</p></div>`);
+//     return modelOfText
+// }
+// console.log(paragraph('dgskfygsdkjfgsdjfgsdjkgfsdjlgfsdfglsdgfsdlugflsdugflsdgflsdgflsdgflsdgflsdgflsdgflsdgflgsdfjlgsdlfjg'));
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+
+// - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий
+// Перший варіант Розв'язку цієї  задачі.
+// function markerList(info) {
+//     let mList =  document.write(`<ul><li>${info}</li><li>${info}</li><li>${info}</li></ul>`)
+//     return mList
+// }
+// console.log(markerList('sdjfsdkfsdklfjsdljflsdfjsdljflsdjflj'));
+
+
+// Другий Варіант
+// function markerList(info) {
+//     for (i=0; i<3; i++){
+//         document.write(`<ul><li>${info}</li></ul>`)
 //     }
 // }
+// markerList('Hello');
 
+// - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий. Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
 
-// - Створити порожній масив. Наповнити його 10 елементами (різними за типами) через звернення до конкретних індексів. Вивести в консоль всі його елементи в циклі.
-
-// let arr = [];
-// arr[0] = "hello";
-// arr[9] = typeof true;
-// arr[8] = false;
-// arr[5] = 33.441;
-// arr[4] = 876;
-// arr[1] = "khgd4";
-// arr[2] = true;
-// arr[3] = false;
-// arr[6] = 7854534534;
-// arr[7] = 876;
-// for (i=0; i< arr.length; i++){
-//     console.log(arr[i])
-// }
-
-// - Створити цикл for на 10  ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
-// - Створити цикл for на 100 ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
-// - Створити цикл for на 100 ітерацій з кроком 2. Вивести поточний номер кроку через console.log та document.write
-
-// for (i=1; i<10; i++){
-//     console.log(i);
-//     document.write(i);
-// }
-
-// for (i=1; i< 100; i++){
-//     console.log(i);
-//     document.write(`<div>${i}</div>`);
-// }
-// for (i=2; i< 100; i++ ){
-//     console.log(i);
-//     document.write(`<div>${i}</div>`);
-// }
-
-// - Створити цикл for на 100 ітерацій. Вивести тільки парні кроки. через console.log + document.write
-// - Створити цикл for на 100 ітерацій. Вивести тільки непарні кроки. через console.log + document.write
-
-// for (i=0; i<100; i++){
-//     if (i%2===0){
-//         console.log(i);
-//         document.write(`<div>${i}</div>`);
+// function markerList(info, index) {
+//     for (let i = 0; i < index; i++) {
+//         document.write(`<ul><li>${info}</li></ul>`)
 //     }
 // }
+// markerList('Hello', 5);
 
-// for (i=0; i< 100; i++){
-//     if (i%2===1){
-//         console.log(i);
-//         document.write(`<div>${i}</div>`);
+
+// - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
+// let arr = ['sdfnsdf', 555, true]
+// function randomArg(someArr) {
+//     for (let item of someArr){
+//         document.write(`<ul><li>${item}</li></ul>`);
 //     }
 // }
+// randomArg(arr)
+
+
+
+
+
+
+
+// - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
+// let info = [
+//     {id: 1, name: 'Vasya', age: 20},
+//     {id: 2, name: 'Andrii', age: 21},
+//     {id: 3, name: 'Sergii', age: 30},
+// ]
+//
+// function strNumbBoolTypes(infoArr) {
+//     for (let item of infoArr){
+//         document.write(
+//             `<div><ul><li>ID --- ${item.id}</li><li>Name ---${item.name}</li><li>Studing status ---${item.age}</li></ul></div>`
+//         );
+//     }
+// }
+// strNumbBoolTypes(info)
 
 
