@@ -41,17 +41,21 @@
 // - Ми маємо змінну x в яку користувач задає  значення,  якщо в змінну записане число, вивести 1,
 //     якщо в змінну записали стрінгу вивести 2, якщо булеве значення - 3, якщо об'єкт або масив - 3.
 // якщо в змінну записали щось інше, спрацьовує else
-
-// let something = typeof 5
-// if (something === typeof Number){
+// let number = 5;
+// let str = 'Hello Mentor';
+// let booleanThing = true;
+// let arrOrObj = [];
+// let arrOrObj2 = {};
+// let something = number;
+// if (typeof something === 'number'){
 //     console.log(1);
-// }else if (something === typeof Boolean ){
+// }else if (typeof something === 'boolean' ){
 //     console.log(2);
-// }else if (something === typeof String ){
+// }else if ( typeof something === 'string'){
 //     console.log(3);
-// }else if (something === typeof Array || something  ===typeof  Object ){
+// }else if ( typeof something === 'object' || typeof something  ===  Array ){
 //     console.log(4);
-// }else if (something ===typeof  undefined || something ===typeof  null){
+// }else if (typeof something ===  'undefined'){
 //     console.log('Good bye');
 // }
 
