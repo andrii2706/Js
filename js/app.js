@@ -1,175 +1,94 @@
-// alert('22')
+//alert('22');
+//- Створити функцію конструктор для об'єктів User з полями id, name, surname , email, phone
+// створити пустий масив, наповнити його 10 об'єктами new User(....)
 
-// - Створити змінні. Присвоїти кожному з них значення: 'hello','owu','com', 'ua', 1, 10, -999, 123, 3.14, 2.7, 16, true, false.
-//     Вивести кожну змінну за допомогою: console.log , alert, document.write
-
-// let hello = 'hello';
-// let owu = 'owu';
-// let com = 'com';
-// let ua = 'ua';
-// let number1 = 1;
-// let number10 = 10;
-// let number999 = -999;
-// let number123 = 123;
-// let numberPI = 3.14;
-// let exponent = 2.7;
-// let number = 16;
-// let firstboolean = true;
-// let secondboolean= false;
-// console.log(hello);
-// console.log(owu);
-// console.log(com);
-// console.log(ua);
-// console.log(number1);
-// console.log(number10);
-// console.log(number999);
-// console.log(number123);
-// console.log(numberPI);
-// console.log(exponent);
-// console.log(number);
-// console.log(firstboolean);
-// console.log(secondboolean);
-// alert(hello);
-// alert(owu);
-// alert(com);
-// alert(ua);
-// alert(number1);
-// alert(number10);
-// alert(number999);
-// alert(number123);
-// alert(numberPI);
-// alert(exponent);
-// alert(number);
-// alert(firstboolean);
-// alert(secondboolean);
-// document.write(`<div>${hello}</div>`);
-// document.write(`<div>${owu}</div>`);
-// document.write(`<div>${com}</div>`);
-// document.write(`<div>${ua}</div>`);
-// document.write(`<div>${number}</div>`);
-// document.write(`<div>${number1}</div>`);
-// document.write(`<div>${number10}</div>`);
-// document.write(`<div>${number999}</div>`);
-// document.write(`<div>${number123}</div>`);
-// document.write(`<div>${numberPI}</div>`);
-// document.write(`<div>${secondboolean}</div>`);
-// document.write(`<div>${firstboolean}</div>`);
-// document.write(`<div>${exponent}</div>`);
-
-//- Переприсвоїти кожній змінній з завдання значення на довільне.
-// hello = 'Owu';
-// owu = 'Hello';
-// com = 'ua';
-// ua = ';';
-// number = 'qwert';
-// number123 = 'asdf';
-// numberPI = 'sdf';
-// number999 = 'vbn';
-// number1 = 'qwe';
-// number10 = 'asd';
-// exponent = '5468';
-// firstboolean = false;
-// secondboolean = true;
-
-// console.log(hello);
-// console.log(owu);
-// console.log(com);
-// console.log(ua);
-// console.log(number1);
-// console.log(number10);
-// console.log(number999);
-// console.log(number123);
-// console.log(numberPI);
-// console.log(exponent);
-// console.log(number);
-// console.log(firstboolean);
-// console.log(secondboolean);
-// alert(hello);
-// alert(owu);
-// alert(com);
-// alert(ua);
-// alert(number1);
-// alert(number10);
-// alert(number999);
-// alert(number123);
-// alert(numberPI);
-// alert(exponent);
-// alert(number);
-// alert(firstboolean);
-// alert(secondboolean);
-// document.write(`<div>${hello}</div>`);
-// document.write(`<div>${owu}</div>`);
-// document.write(`<div>${com}</div>`);
-// document.write(`<div>${ua}</div>`);
-// document.write(`<div>${number}</div>`);
-// document.write(`<div>${number1}</div>`);
-// document.write(`<div>${number10}</div>`);
-// document.write(`<div>${number999}</div>`);
-// document.write(`<div>${number123}</div>`);
-// document.write(`<div>${numberPI}</div>`);
-// document.write(`<div>${secondboolean}</div>`);
-// document.write(`<div>${firstboolean}</div>`);
-// document.write(`<div>${exponent}</div>`);
-
-//- Створити 3 змінних firstName, middleName, lastName, наповнити їх своїм ПІБ. З'єднати їх в одну змінну person. (Не об'єкт)
-// let firstName = 'Andrii';
-// let LastName = 'Paslavskyi'
-// let MiddleName = 'Volodumurovych'
+// function User(id, name, surname, email, phone) {
+//     this.id = id;
+//     this.name = name;
+//     this.surname = surname;
+//     this.email = email;
+//     this.phone = phone
 //
-// const person = firstName+ ' ' + LastName+ ' ' + MiddleName;
-// console.log(person);
+// }
+//
+// const user1 = new User(1, 'Andrii', 'Pupkin', 'adnrii@gmail.com', '05123654785');
+// const user2 = new User(2, 'Oleg', 'Pupkin', 'adnrii@gmail.com', '05123654785');
+// const user3 = new User(3, 'Max', 'Pupkin', 'adnrii@gmail.com', '05123654785');
+// const user4 = new User(4, 'Vasya', 'Pupkin', 'adnrii@gmail.com', '05123654785');
+// const user5 = new User(5, 'Olga', 'Pupkin', 'adnrii@gmail.com', '05123654785');
+// const user6 = new User(6, 'Roman', 'Pupkin', 'adnrii@gmail.com', '05123654785');
+// const user7 = new User(7, 'Mishael', 'Pupkin', 'adnrii@gmail.com', '05123654785');
+// const user8 = new User(8, 'John', 'Pupkin', 'adnrii@gmail.com', '05123654785');
+// const user9 = new User(9, 'Ostap', 'Pupkin', 'adnrii@gmail.com', '05123654785');
+// const user10 = new User(10, 'Taras', 'Pupkin', 'adnrii@gmail.com', '05123654785');
+//
+// let emptyArr = [];
+// emptyArr[0] = user1;
+// emptyArr[1] = user2;
+// emptyArr[3] = user3;
+// emptyArr[2] = user4;
+// emptyArr[5] = user5;
+// emptyArr[4] = user6;
+// emptyArr[8] = user7;
+// emptyArr[7] = user8;
+// emptyArr[6] = user9;
+// emptyArr[9] = user10;
+//
+// console.log(emptyArr);
 
-//- За допомогою 3х різних prompt() отримати 3 слова які являються вашими Імям, По-Батькові та роками.
-//     Вивести "Вітаю *Імя* *По батькові*. Тобі *вік* років".
-// let firstName = prompt('Your name');
-// let secondName = prompt('Your SecondName');
-// let yourAge = +prompt('How old are you?')
-// console.log(`Your name - ${firstName}`);
-// console.log(`Your SecondName - ${secondName}`);
-// console.log(`Your Age - ${yourAge}`);
+// - Взяти масив з  User[] з попереднього завдання, та відфільтрувати , залишивши тільки об'єкти з парними id (filter)
+//
+// console.log(emptyArr.filter(user => user.id % 2));
+// - Взяти масив з  User[] з попереднього завдання, та відсортувати його по id. по зростанню (sort)
+// console.log(emptyArr.sort(user=>user.id));
 
-// - За допомогою оператора typeof визначити типи наступних змінних та вивести їх в консоль.
-//     let a = 100; let b = '100'; let c = true;
-// let a  = 100 ;
-// console.log(typeof a);
-// let  b  = '100';
-// console.log(typeof  b);
-// let  c = true;
-// console.log(typeof c);
+// - створити класс для об'єктів Client з полями id, name, surname , email, phone, order (поле є масивом зі списком товарів)
+// створити пустий масив, наповнити його 10 об'єктами Client
+// - Взяти масив (Client [] з попереднього завдання).Відсортувати його по кількості товарів в полі order по зростанню. (sort)
 
-//- Визначити відповідний оператор в виразах що б вийшов відповідний результат.
-// В однакових виразах не використовувати однакові оператори!!!
-// const xxx = 5 < 6;
-// const fff = 5 > 6;
-// const lll = 5 === 6;
-// const kkk = 5 == 6;
-// const mmm = 10=== 10;
-// const nnn = 10 == 10;
-// const yyy = 10 > 10;
-// const ttt = 10 < 10;
-// const rrr = 10 !== 10;
-// const ddd = 123 > '123';
-// const www = 123 == '123';
-// console.log(www);
-// console.log(ddd);
-// console.log(xxx);
-// console.log(fff);
-// console.log(lll);
-// console.log(kkk);
-// console.log(mmm);
-// console.log(nnn);
-// console.log(yyy);
-// console.log(ttt);
-// console.log(rrr);
+// class Client {
+//     constructor(id, name, surname, email, phone, order) {
+//         this.id = id;
+//         this.name = name;
+//         this.surname = surname;
+//         this.email = email;
+//         this.phone = phone;
+//         this.order = order;
+//     }
+//
+// }
+//
+// const karina = new Client(2, 'Karina', 'Melesova', 'karina@gmail.com', '+380668579540', 2);
+// const oleg = new Client(1, 'Oleg', 'Melesov', 'Oleg@gmail.com', '+380669959540', 1);
+// const ivan = new Client(4, 'Ivan', 'Melesov', 'Oleg@gmail.com', '+380669959540', 3);
+// const andrii = new Client(3, 'Andrii', 'Melesov', 'Oleg@gmail.com', '+380669959540', 4);
+// const roman = new Client(5, 'Roman', 'Melesov', 'Oleg@gmail.com', '+380669959540', 5);
+// const vika = new Client(7, 'Vika', 'Melesov', 'Oleg@gmail.com', '+380669959540', 7);
+// const nadia = new Client(6, 'Nadia', 'Melesov', 'Oleg@gmail.com', '+380669959540', 6);
+// const sergii = new Client(8, 'Sergii', 'Melesov', 'Oleg@gmail.com', '+380669959540', 8);
+// const olya = new Client(10, 'Olya', 'Melesov', 'Oleg@gmail.com', '+380669959540', 10);
+// const lera = new Client(9, 'Lera', 'Melesov', 'Oleg@gmail.com', '+380669959540', 9);
+//
+// let emptyArr = [];
+//  emptyArr[0] = karina;
+//  emptyArr[1] = oleg;
+//  emptyArr[2] = ivan;
+//  emptyArr[3] = andrii;
+//  emptyArr[4] = roman;
+//  emptyArr[5] = vika;
+//  emptyArr[6] = nadia;
+//  emptyArr[7] = sergii;
+//  emptyArr[8] = olya;
+//  emptyArr[9] = lera;
 
-
-// - Подумайте Какие значения выведет в окно браузера следующий фрагмент кода?  и почему?
-//     let str = "20";
-// let a = 5;
-// document.write(str + a + "<br/>");
-// в фукція document.write(str + a + "<br/>"); поверне нам  205  тому, що чило  розглядається як стрінгове значення
-//document.write(str - a + "<br/>"); поверне нам 15 тому, що число розглядається як стрінгове значення
-
-// document.write(str * "2" + "<br/>");поверне нам 40 тому, що число розглядається як стрінгове значення
-
-// document.write(str / 2 + "<br/>");поверне нам 10 тому,що число розглядається як стрінгове значення
+// console.log(emptyArr);
+// const sortedArr = emptyArr.sort((a, b) => {
+//     if (a.order > b.order){
+//         return 1
+//     }
+//     if (a.order < b.order) {
+//         return -1;
+//     }
+//     return 0
+// })
+// console.log(sortedArr);
