@@ -1,175 +1,188 @@
-// alert('22')
+// alert('lsdfhlsdknf');
+//- Создать произвольный елемент с id = text.  Используя JavaScript, сделайте так, чтобы при клике на кнопку исчезал элемент с id="text".
+// let textId = document.getElementById('text');
+let button = document.getElementById('btn');
+//Перший метод
+// button.onclick = function () {
+//     textId.style.display ='none';
+// }
+//Другий метод
+// function ClickOn(e) {
+//     textId.style.display = 'none';
+// }
+//Третій метод
+// function ClickOn(e){
+//     textId.classList.add('none');
+// }
 
-// - Створити змінні. Присвоїти кожному з них значення: 'hello','owu','com', 'ua', 1, 10, -999, 123, 3.14, 2.7, 16, true, false.
-//     Вивести кожну змінну за допомогою: console.log , alert, document.write
+// - створити інпут який приймає вік людини та кнопку яка підтверджує дію.При натисканні на кнопку зчитати
+// інформацію з інпуту та перевірити вік чи меньше він ніж 18, та повідомити про це користувача
 
-// let hello = 'hello';
-// let owu = 'owu';
-// let com = 'com';
-// let ua = 'ua';
-// let number1 = 1;
-// let number10 = 10;
-// let number999 = -999;
-// let number123 = 123;
-// let numberPI = 3.14;
-// let exponent = 2.7;
-// let number = 16;
-// let firstboolean = true;
-// let secondboolean= false;
-// console.log(hello);
-// console.log(owu);
-// console.log(com);
-// console.log(ua);
-// console.log(number1);
-// console.log(number10);
-// console.log(number999);
-// console.log(number123);
-// console.log(numberPI);
-// console.log(exponent);
-// console.log(number);
-// console.log(firstboolean);
-// console.log(secondboolean);
-// alert(hello);
-// alert(owu);
-// alert(com);
-// alert(ua);
-// alert(number1);
-// alert(number10);
-// alert(number999);
-// alert(number123);
-// alert(numberPI);
-// alert(exponent);
-// alert(number);
-// alert(firstboolean);
-// alert(secondboolean);
-// document.write(`<div>${hello}</div>`);
-// document.write(`<div>${owu}</div>`);
-// document.write(`<div>${com}</div>`);
-// document.write(`<div>${ua}</div>`);
-// document.write(`<div>${number}</div>`);
-// document.write(`<div>${number1}</div>`);
-// document.write(`<div>${number10}</div>`);
-// document.write(`<div>${number999}</div>`);
-// document.write(`<div>${number123}</div>`);
-// document.write(`<div>${numberPI}</div>`);
-// document.write(`<div>${secondboolean}</div>`);
-// document.write(`<div>${firstboolean}</div>`);
-// document.write(`<div>${exponent}</div>`);
+// function inputFormEvent(e) {
+//     let inputAge = document.getElementById('age');
+//     // console.log(inputAge.value);
+//     if (!inputAge.value) {
+//         alert('Input your age in to filed');
+//     } else if (inputAge.value <= 18) {
+//         alert('Go to school boy');
+//     } else {
+//         alert('Welcome on our website');
+//     }
+// }
 
-//- Переприсвоїти кожній змінній з завдання значення на довільне.
-// hello = 'Owu';
-// owu = 'Hello';
-// com = 'ua';
-// ua = ';';
-// number = 'qwert';
-// number123 = 'asdf';
-// numberPI = 'sdf';
-// number999 = 'vbn';
-// number1 = 'qwe';
-// number10 = 'asd';
-// exponent = '5468';
-// firstboolean = false;
-// secondboolean = true;
+// - Создайте меню, которое раскрывается/сворачивается при клике
 
-// console.log(hello);
-// console.log(owu);
-// console.log(com);
-// console.log(ua);
-// console.log(number1);
-// console.log(number10);
-// console.log(number999);
-// console.log(number123);
-// console.log(numberPI);
-// console.log(exponent);
-// console.log(number);
-// console.log(firstboolean);
-// console.log(secondboolean);
-// alert(hello);
-// alert(owu);
-// alert(com);
-// alert(ua);
-// alert(number1);
-// alert(number10);
-// alert(number999);
-// alert(number123);
-// alert(numberPI);
-// alert(exponent);
-// alert(number);
-// alert(firstboolean);
-// alert(secondboolean);
-// document.write(`<div>${hello}</div>`);
-// document.write(`<div>${owu}</div>`);
-// document.write(`<div>${com}</div>`);
-// document.write(`<div>${ua}</div>`);
-// document.write(`<div>${number}</div>`);
-// document.write(`<div>${number1}</div>`);
-// document.write(`<div>${number10}</div>`);
-// document.write(`<div>${number999}</div>`);
-// document.write(`<div>${number123}</div>`);
-// document.write(`<div>${numberPI}</div>`);
-// document.write(`<div>${secondboolean}</div>`);
-// document.write(`<div>${firstboolean}</div>`);
-// document.write(`<div>${exponent}</div>`);
-
-//- Створити 3 змінних firstName, middleName, lastName, наповнити їх своїм ПІБ. З'єднати їх в одну змінну person. (Не об'єкт)
-// let firstName = 'Andrii';
-// let LastName = 'Paslavskyi'
-// let MiddleName = 'Volodumurovych'
+// const menuTitle = document.querySelector('.menu');
+// const titleElement = menuTitle.querySelector('.title');
 //
-// const person = firstName+ ' ' + LastName+ ' ' + MiddleName;
-// console.log(person);
-
-//- За допомогою 3х різних prompt() отримати 3 слова які являються вашими Імям, По-Батькові та роками.
-//     Вивести "Вітаю *Імя* *По батькові*. Тобі *вік* років".
-// let firstName = prompt('Your name');
-// let secondName = prompt('Your SecondName');
-// let yourAge = +prompt('How old are you?')
-// console.log(`Your name - ${firstName}`);
-// console.log(`Your SecondName - ${secondName}`);
-// console.log(`Your Age - ${yourAge}`);
-
-// - За допомогою оператора typeof визначити типи наступних змінних та вивести їх в консоль.
-//     let a = 100; let b = '100'; let c = true;
-// let a  = 100 ;
-// console.log(typeof a);
-// let  b  = '100';
-// console.log(typeof  b);
-// let  c = true;
-// console.log(typeof c);
-
-//- Визначити відповідний оператор в виразах що б вийшов відповідний результат.
-// В однакових виразах не використовувати однакові оператори!!!
-// const xxx = 5 < 6;
-// const fff = 5 > 6;
-// const lll = 5 === 6;
-// const kkk = 5 == 6;
-// const mmm = 10=== 10;
-// const nnn = 10 == 10;
-// const yyy = 10 > 10;
-// const ttt = 10 < 10;
-// const rrr = 10 !== 10;
-// const ddd = 123 > '123';
-// const www = 123 == '123';
-// console.log(www);
-// console.log(ddd);
-// console.log(xxx);
-// console.log(fff);
-// console.log(lll);
-// console.log(kkk);
-// console.log(mmm);
-// console.log(nnn);
-// console.log(yyy);
-// console.log(ttt);
-// console.log(rrr);
+// titleElement.onclick = function () {
+//     menuTitle.classList.toggle('hidden');
+// }
 
 
-// - Подумайте Какие значения выведет в окно браузера следующий фрагмент кода?  и почему?
-//     let str = "20";
-// let a = 5;
-// document.write(str + a + "<br/>");
-// в фукція document.write(str + a + "<br/>"); поверне нам  205  тому, що чило  розглядається як стрінгове значення
-//document.write(str - a + "<br/>"); поверне нам 15 тому, що число розглядається як стрінгове значення
+// - Создать список комментариев , пример объекта коментария - {title : 'lorem', body:'lorem ipsum dolo sit ameti'}.
+//     Вывести список комментариев в документ, каждый в своем блоке.
+//     Добавьте каждому комментарию по кнопке для сворачивания его body.
 
-// document.write(str * "2" + "<br/>");поверне нам 40 тому, що число розглядається як стрінгове значення
 
-// document.write(str / 2 + "<br/>");поверне нам 10 тому,що число розглядається як стрінгове значення
+const contacts = [
+    {
+        "id": 1,
+        "name": "Leanne Graham",
+        "username": "Bret",
+        "email": "Sincere@april.biz",
+        "address": {
+            "street": "Kulas Light",
+            "suite": "Apt. 556",
+            "city": "Gwenborough",
+            "zipcode": "92998-3874",
+            "geo": {
+                "lat": "-37.3159",
+                "lng": "81.1496"
+            }
+        },
+        "phone": "1-770-736-8031 x56442",
+        "website": "hildegard.org",
+        "company": {
+            "name": "Romaguera-Crona",
+            "catchPhrase": "Multi-layered client-server neural-net",
+            "bs": "harness real-time e-markets"
+        }
+    },
+    {
+        "id": 2,
+        "name": "Ervin Howell",
+        "username": "Antonette",
+        "email": "Shanna@melissa.tv",
+        "address": {
+            "street": "Victor Plains",
+            "suite": "Suite 879",
+            "city": "Wisokyburgh",
+            "zipcode": "90566-7771",
+            "geo": {
+                "lat": "-43.9509",
+                "lng": "-34.4618"
+            }
+        },
+        "phone": "010-692-6593 x09125",
+        "website": "anastasia.net",
+        "company": {
+            "name": "Deckow-Crist",
+            "catchPhrase": "Proactive didactic contingency",
+            "bs": "synergize scalable supply-chains"
+        }
+    },
+    {
+        "id": 3,
+        "name": "Clementine Bauch",
+        "username": "Samantha",
+        "email": "Nathan@yesenia.net",
+        "address": {
+            "street": "Douglas Extension",
+            "suite": "Suite 847",
+            "city": "McKenziehaven",
+            "zipcode": "59590-4157",
+            "geo": {
+                "lat": "-68.6102",
+                "lng": "-47.0653"
+            }
+        },
+        "phone": "1-463-123-4447",
+        "website": "ramiro.info",
+        "company": {
+            "name": "Romaguera-Jacobson",
+            "catchPhrase": "Face to face bifurcated interface",
+            "bs": "e-enable strategic applications"
+        }
+    },
+    {
+        "id": 4,
+        "name": "Patricia Lebsack",
+        "username": "Karianne",
+        "email": "Julianne.OConner@kory.org",
+        "address": {
+            "street": "Hoeger Mall",
+            "suite": "Apt. 692",
+            "city": "South Elvis",
+            "zipcode": "53919-4257",
+            "geo": {
+                "lat": "29.4572",
+                "lng": "-164.2990"
+            }
+        },
+        "phone": "493-170-9623 x156",
+        "website": "kale.biz",
+        "company": {
+            "name": "Robel-Corkery",
+            "catchPhrase": "Multi-tiered zero tolerance productivity",
+            "bs": "transition cutting-edge web services"
+        }
+    },
+    {
+        "id": 5,
+        "name": "Chelsey Dietrich",
+        "username": "Kamren",
+        "email": "Lucio_Hettinger@annie.ca",
+        "address": {
+            "street": "Skiles Walks",
+            "suite": "Suite 351",
+            "city": "Roscoeview",
+            "zipcode": "33263",
+            "geo": {
+                "lat": "-31.8129",
+                "lng": "62.5342"
+            }
+        },
+        "phone": "(254)954-1289",
+        "website": "demarco.info",
+        "company": {
+            "name": "Keebler LLC",
+            "catchPhrase": "User-centric fault-tolerant solution",
+            "bs": "revolutionize end-to-end systems"
+        }
+    }
+]
+let divTemplate = document.createElement('div');
+for (let contact of contacts) {
+    let div = document.createElement('div');
+    let h2 = document.createElement('h2');
+    let h3 = document.createElement('h3');
+    let h4 = document.createElement('h4');
+    let p = document.createElement('p');
+    let btn = document.createElement('button');
+    let hr = document.createElement('hr');
+    h2.innerText = contact.name;
+    h3.innerText = contact.email;
+    h4.innerText = contact.username;
+    p.innerText = contact.phone;
+    btn.innerText = 'Hide Info About User From JSONPlaceHolder'
+    btn.onclick = function () {
+        p.classList.add('infoHidden');
+        h3.classList.add('infoHidden');
+        h2.classList.add('infoHidden');
+        h4.classList.add('infoHidden');
+    }
+    div.append(h2, h3, h4, p, btn, hr);
+    divTemplate.append(div, hr);
+}
+document.body.appendChild(divTemplate);
